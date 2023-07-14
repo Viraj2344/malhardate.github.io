@@ -2,6 +2,17 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 /*=====Navbar===========*/
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+body {
+  padding-top: 60px; /* Add padding to body to prevent content from overlapping with the fixed navbar */
+}
 .navbar .nav-link{
     font-size: 14px;
     text-transform: uppercase;
@@ -373,7 +384,9 @@ body{
     height: 200px;
 }
   /* ... */
-
+  body{
+    padding-top: 50px;
+  }
   /* Service Section */
   .service-icon{
     display: inline-block;
